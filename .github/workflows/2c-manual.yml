@@ -1,0 +1,21 @@
+name: 2C Manual
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: Your name
+        required: true
+        default: Student
+      greeting:
+        description: Greeting
+        required: true
+        default: Hello
+      data:
+        description: Extra data
+        required: false
+        default: test123
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ inputs.greeting }} ${{ inputs.name }}. Data is ${{ inputs.data }}"

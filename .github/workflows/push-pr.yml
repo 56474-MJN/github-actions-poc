@@ -1,0 +1,14 @@
+name: 2A Push and Pull Request
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+jobs:
+  show-event:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Event: ${{ github.event_name }}"
+          echo "Branch/ref: ${{ github.ref }}"
+          echo "Repository: ${{ github.repository }}"

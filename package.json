@@ -1,0 +1,9 @@
+{
+  "name": "github-actions-cache-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal npm project for GitHub Actions cache demonstration",
+  "dependencies": {
+    "is-number": "7.0.0"
+  }
+}
